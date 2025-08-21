@@ -79,6 +79,7 @@ Note: Do not worry about the length of the objects, just plot the centers of the
 
 ## Dataset Structure
 
+```
 dataset/
 │
 ├── rgb/ # Left camera RGB images
@@ -99,7 +100,7 @@ dataset/
 │ # { "fx": 615.0, "fy": 615.0, "cx": 640.0, "cy": 360.0 }
 │
 └── README.txt
-
+```
 
 **Notes on data:**  
 - Image size: 1920 × 1200 pixels (RGB).  
