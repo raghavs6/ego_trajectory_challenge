@@ -95,10 +95,6 @@ dataset/
 ├── bboxes_light.csv # Traffic light bounding box per frame
 │ # Columns: frame_id,x_min,y_min,x_max,y_max
 │
-├── intrinsics.json # Camera intrinsics dictionary
-│ # Example:
-│ # { "fx": 615.0, "fy": 615.0, "cx": 640.0, "cy": 360.0 }
-│
 └── README.txt
 ```
 
