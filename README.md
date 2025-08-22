@@ -24,7 +24,7 @@ Use any tools you like — chatGPT and other assistants are highly encouraged. P
      ```
      frame_id, x_min, y_min, x_max, y_max
      ```
-   - Use the bounding box center (u, v) as the pixel location of the traffic light. alternatively, you could look into averging depth of a small patch around the center for better noise sensitivity.   
+   - Use the bounding box center (u, v) as the pixel location of the traffic light. Alternatively, you could look into averging depth of a patch around the center for better noise sensitivity.   
 
 2. **3D Position from Depth Data**  
    - Each frame has a `.npz` file containing a 3D array of shape `(H, W, 3)`.  
