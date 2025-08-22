@@ -108,7 +108,6 @@ dataset/
 **Notes on data:**  
 - Image size: 1920 × 1200 pixels (RGB).  
 - Point cloud `.npz` files correspond 1:1 with RGB frames.  
-- Intrinsics are included if you need reprojection or camera-to-world transforms.  
 - Depth may have noise or invalid values (0/NaN) — handle gracefully.  
 
 ---
