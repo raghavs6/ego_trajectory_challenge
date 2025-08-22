@@ -81,7 +81,7 @@ Note: Do not worry about the length of the objects, just plot the centers of the
 
  Sample Ground-Frame Animation                          |   Sample Ego-Frame Animation
 :-------------------------:|:-------------------------:
-<img src="sample_animated_BEV_groundFrame.gif" width="500"> | <img src="sample_animated_BEV_egoFrame.gif" width="500">
+<img src="sample_animated_BEV_groundFrame.gif" width="450"> | <img src="sample_animated_BEV_egoFrame.gif" width="450">
 
 ---
 
