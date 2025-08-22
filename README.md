@@ -17,7 +17,7 @@ Use any tools you like — chatGPT and other assistants are highly encouraged. P
 <img src="WA Challenge.gif" width="500"> 
 
 ---
-## Part A (Minimum Required)
+## Part A (Expected)
 
 1. **Traffic Light Tracking**  
    - You are provided with a CSV file containing the bounding box of the traffic light in each frame:  
@@ -55,9 +55,12 @@ Use any tools you like — chatGPT and other assistants are highly encouraged. P
    - `trajectory.png` (required): still plot of the ego-vehicle trajectory in BEV coordinates (X,Y plane; do not worry about the height in the final output) .  
    - `trajectory.mp4` (optional): animated BEV trajectory video (trajectory is drawn on a plot as a function of time)  
 
-#### Here is a sample output for your reference, you dont have to make yours look similar as long as it is legible.
-<img src="sample_static_BEV_plot.png" width="500">
+#### Here is a sample output for your reference.
 
+<img src="sample_static_BEV_plot.png" width="500">
+ 
+You dont have to make yours look similar as long as it is legible.
+#### Your output might not look as stable and that is OK. The trajectory can be a bunch of discrete points, you don't need a solid line.
 ---
 
 ## Part B (Optional — Extra Credit)
@@ -131,6 +134,7 @@ dataset/
 - Clarity → Is your report correct or are your ideas right?  
 - Each criteria will be graded on a scale of 1-5.
 
+- Remember, it's OK to attempt it all and fail as long as you learn something and document it well you would have a good shot at it.
 
 ---
 ##### [Interesting stuff from NVIDIA](https://build.nvidia.com/nvidia/bevformer) for the curious.
