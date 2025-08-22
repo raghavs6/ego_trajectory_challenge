@@ -1,21 +1,23 @@
 # Computer Vision Challenge: Ego-Trajectory & Bird’s-Eye View Mapping  
 
+---
 ## Problem Overview
-You are given a short **10-second video** recorded from an **ego-vehicle** (our golf cart with a front-facing stereo camera). The scene includes:  
+You are given a short **10-second video** recorded from an **ego-vehicle** (our Autonomous Car with a front-facing stereo camera). The scene includes:  
 
 - A traffic light (fixed, overhead)  
 - Several static barrels  
 - A moving golf cart ahead of us  
 - Occasionally, pedestrians  
 
-Your task is to estimate and visualize the **ego-vehicle’s trajectory in the ground frame**, using the traffic light as a world reference. You may then extend your solution by tracking additional objects and rendering a richer **Bird’s-Eye View (BEV)**.  
-Use any tools you like — chatGPT and other assistants are highly encouraged.  
+Your task is to estimate and visualize the **ego-vehicle’s trajectory in the ground frame**, using the traffic light as a world reference.
+You may then extend your solution by tracking additional objects and rendering a richer **Bird’s-Eye View (BEV)**.  
 
+Use any tools you like — chatGPT and other assistants are highly encouraged. Please **do not** flood our e-mails with simple questions. GenAI is you friend.  
 
-![alt text](<WA Challenge.gif>)
+<img src="WA Challenge.gif" width="500"> 
 
 ---
-## Part A (Minimum Challenge — Required)
+## Part A (Minimum Required)
 
 1. **Traffic Light Tracking**  
    - You are provided with a CSV file containing the bounding box of the traffic light in each frame:  
@@ -49,9 +51,12 @@ Use any tools you like — chatGPT and other assistants are highly encouraged.
      - This defines a right-handed coordinate system with (X forward, Y left, Z up).  
    - Use the apparent motion of the traffic light in the ego-camera frame to compute the ego-vehicle’s trajectory `(x_m, y_m)` projected onto the ground plane.  
 
-4. **Outputs (Required)**  
-   - `trajectory.png`: still plot of the ego-vehicle trajectory in BEV coordinates (X,Y plane; do not worry about the height in the final output) .  
+4. **Outputs**  
+   - `trajectory.png` (required): still plot of the ego-vehicle trajectory in BEV coordinates (X,Y plane; do not worry about the height in the final output) .  
    - `trajectory.mp4` (optional): animated BEV trajectory video (trajectory is drawn on a plot as a function of time)  
+
+#### Here is a sample output for your reference, you dont have to make yours look similar as long as it is legible.
+<img src="sample_static_BEV_plot.png" width="500">
 
 ---
 
@@ -72,8 +77,11 @@ Note: Do not worry about the length of the objects, just plot the centers of the
 - You could have the traffic light color in the BEV video.
 - Creativity is encouraged — richer BEVs score higher
 - This optional part's BEV can be in car frame making your life a bit easy.   
----
-<img src="sample_static_BEV_plot.png" width="800">
+
+
+ Sample Ground-Frame Animation                          |   Sample Ego-Frame Animation
+:-------------------------:|:-------------------------:
+<img src="sample_animated_BEV_groundFrame.gif" width="500"> | <img src="sample_animated_BEV_egoFrame.gif" width="500">
 
 ---
 
@@ -92,10 +100,9 @@ dataset/
 │ ├── frame_0002.npz
 │ └── ...
 │
-├── bboxes_light.csv # Traffic light bounding box per frame
-│ # Columns: frame_id,x_min,y_min,x_max,y_max
-│
-└── README.txt
+└── bboxes_light.csv # Traffic light bounding box per frame
+ # Columns: frame_id,x_min,y_min,x_max,y_max
+
 ```
 
 **Notes on data:**  
@@ -110,18 +117,22 @@ dataset/
 
 1. `trajectory.png` (required)  
 2. `trajectory.mp4` (optional)  
-3. Any extra plots, overlays, or videos for Part B  
-4. `report.pdf` (max 1 page):  
+3.  Your Code
+4.  Any extra plots, overlays, or videos
+5. `report.pdf` (max 1 page):  
    - Describe your method, assumptions, and results  
-   - Include at least one still image of your BEV plot  
 
+- Please create a GitHub repository and [mail](wisconsinautonomous@gmail.com) us the link.
+- Use **[Perception_Challenge_Fall2025]** as the subject or we will **not** evaluate your results.
 ---
 
-## Evaluation Criteria
+## Evaluation Criteria 
 
-- Correctness (70%) → Is the ego trajectory reasonable in the defined ground frame?  
-- Completeness (10%) → Did you finish Part A outputs?  
-- Richness (10%) → Did you add other objects in Part B?  
-- Clarity (10%) → Is your report and visualization clear?  
+- Correctness → Is the ego trajectory reasonable in the defined ground frame?   
+- Clarity → Is your report correct or are your ideas right?  
+- Each criteria will be graded on a scale of 1-5.
+
 
 ---
+##### [Interesting stuff from NVIDIA](https://build.nvidia.com/nvidia/bevformer) for the curious.
+<img src="bevformer.jpeg" width="500">
