@@ -108,6 +108,8 @@ dataset/
 
 ```
 
+### Download the [<u>dataset</u>](https://drive.google.com/drive/folders/1wkmImXqQL9wCURVyenqh8MGGuM2N2m8u?usp=drive_link)
+
 **Notes on data:**  
 - Image size: 1920 × 1200 pixels (RGB).  
 - Point cloud `.npz` files correspond 1:1 with RGB frames.  
