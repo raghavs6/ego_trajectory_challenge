@@ -108,7 +108,7 @@ dataset/
 
 ```
 
-### Download the [<u>dataset</u>](https://drive.google.com/drive/folders/1wkmImXqQL9wCURVyenqh8MGGuM2N2m8u?usp=drive_link)
+### <u>Download the [DATASET](https://drive.google.com/drive/folders/1wkmImXqQL9wCURVyenqh8MGGuM2N2m8u?usp=drive_link)</u>
 
 **Notes on data:**  
 - Image size: 1920 × 1200 pixels (RGB).  
@@ -123,11 +123,11 @@ dataset/
 2. `trajectory.mp4` (optional)  
 3.  Your Code
 4.  Any extra plots, overlays, or videos
-5. `report.pdf` (max 1 page):  
+5. `README.md` (max 1 page):  
    - Describe your method, assumptions, and results  
 
-- Please create a GitHub repository and [mail](wisconsinautonomous@gmail.com) us the link.
-- Use **[Perception_Challenge_Fall2025]** as the subject or we will **not** evaluate your results.
+Please create a <u>PUBLIC</u> GitHub repository and [submit](wisconsinautonomous@gmail.com) the link.
+
 ---
 
 ## Evaluation Criteria 
