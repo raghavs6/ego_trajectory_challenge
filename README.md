@@ -126,7 +126,7 @@ dataset/
 5. `README.md` (max 1 page):  
    - Describe your method, assumptions, and results  
 
-Please create a <u>PUBLIC</u> GitHub repository and [submit](wisconsinautonomous@gmail.com) the link.
+Please create a <u>PUBLIC</u> GitHub repository and [submit](https://forms.gle/YRurun5pyShtf1LPA) your link to the application.
 
 ---
 
