@@ -1,4 +1,4 @@
-I used genAI to help me with this. I was going into it, I knew very little about how to track this challenge. I knew a little about cv2 and I know Python, but a lot of these concepts were new to me. I had AI write the code and I asked it to explain the concepts behind it for me to learn it.
+I used genAI to help me with this. Going into it, I knew very little about how to tackle this challenge. I knew about cv2 and I know Python, but a lot of these concepts were new to me. I had AI write the code and I asked it to explain the concepts behind it for me to learn it.
 
 
 Solution Approach
